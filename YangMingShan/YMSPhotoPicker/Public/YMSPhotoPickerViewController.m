@@ -153,6 +153,9 @@ static const CGFloat YMSPhotoFetchScaleResizingRatio = 0.75;
 
 -(void)cancelSelection {
     self.selectedPhotos = [NSMutableArray new];
+    if([self photoCollectionView]){
+        [self.photoCollectionView reloadData];
+    }
 }
 
 #pragma mark - Getters
