@@ -151,6 +151,10 @@ static const CGFloat YMSPhotoFetchScaleResizingRatio = 0.75;
     self.cellLandscapeSize = CGSizeMake(size, size);
 }
 
+-(void)cancelSelection {
+    self.selectedPhotos = [NSMutableArray new];
+}
+
 #pragma mark - Getters
 
 - (YMSPhotoPickerTheme *)theme

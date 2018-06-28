@@ -42,6 +42,9 @@
  */
 @property (nonatomic, assign) BOOL shouldReturnImageForSingleSelection;
 
+
+-(void)cancelSelection;
+
 @end
 
 /**
